@@ -104,5 +104,3 @@ if(correctAnswerCounter >= 4){
 }else{
   alert(userName + ', You got ' + correctAnswerCounter + ' out of 7 questions.\nSorry we can\'t have you in the next game.\n\nThank you :D');
 }
-=======
->>>>>>> a81cc0fe18f48f34ddedb3b8039fda5999dff8a9
