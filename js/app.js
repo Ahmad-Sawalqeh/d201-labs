@@ -1,7 +1,7 @@
 'use strict';
 //greeting
 var userName = prompt('What\'s your name?');
-while (userName == '') {
+while (userName == '' || userName == null) {
   userName = prompt('Please wirte your name first!');
 }
 alert('welcome ' + userName);
