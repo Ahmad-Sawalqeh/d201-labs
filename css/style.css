@@ -35,7 +35,7 @@ main section h2{
   font-weight: 600;
   color:#fff;
 }
-main section ol{
+main section ul,main section ol{
   padding: 20px;
   line-height: 30px;
 }
