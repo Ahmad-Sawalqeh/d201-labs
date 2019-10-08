@@ -50,6 +50,7 @@ function checkingAnswer() {
     }
   }
 }
+<<<<<<< HEAD
 alert('Now you have to know what is the number that i have in my mind! ;)\nbe ready.');
 alert('Notice that you have only 3 chances to answer.\nPlease click OK to start.\nGood Luke');
 while (wrongeAnswerCounter > 3) {
@@ -103,3 +104,5 @@ if(correctAnswerCounter >= 4){
 }else{
   alert(userName + ', You got ' + correctAnswerCounter + ' out of 7 questions.\nSorry we can\'t have you in the next game.\n\nThank you :D');
 }
+=======
+>>>>>>> a81cc0fe18f48f34ddedb3b8039fda5999dff8a9
