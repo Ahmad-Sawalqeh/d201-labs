@@ -15,8 +15,10 @@ var myFavoriteMovies = ['hancock','matrix','mr.Robot','spiderman','paranormal'];
 var question = ['Do you know Ahmad?','Is his age 31?','Is his major Engineer?','Do you know what his favorite color?','Do you know how tall Ahmad is?'];
 //making a loop for asking all the questions
 while(index != question.length){
+  
   checkingAnswer();
   theAnswers();
+
 }
 
 //declare a function to check the answers that the user wrote, also give a massege as a reply
