@@ -27,7 +27,19 @@ while (wrongeAnswerCounter < 4) {
   while(userInput==null || userInput==""){
     userInput = prompt( 'Please you should enter at least one number:');
   }
-  checkUserInput();
+  if(userInput == myNumber){
+    alert("Right in the spot, well done\nYou got " + ++correctAnswerCounter + " points");
+    break;
+  }else if(5 <= userInput && userInput <= 10 ){
+    alert("You too close,\nTry again");
+    wrongeAnswerCounter++;
+  }else if( (5 > userInput && userInput >= 1) || (13 >= userInput && userInput > 10) ){
+    alert("You a little bit away,\nTry again");
+    wrongeAnswerCounter++;
+  }else if( 1 > userInput || userInput > 13 ){
+    alert("You far away :( ,\nTry again");
+    wrongeAnswerCounter++;
+  } 
    
 }
 if (wrongeAnswerCounter >= 4 || userInput != myNumber) {
@@ -100,23 +112,4 @@ function checkingAnswer() {
       break;
     }
   }
-}
-
-//declare function to ckeck the user input and answer him
-function checkUserInput(){
-
-  if(userInput == myNumber){
-    alert("Right in the spot, well done\nYou got " + ++correctAnswerCounter + " points");
-    break;
-  }else if(5 <= userInput && userInput <= 10 ){
-    alert("You too close,\nTry again");
-    wrongeAnswerCounter++;
-  }else if( (5 > userInput && userInput >= 1) || (13 >= userInput && userInput > 10) ){
-    alert("You a little bit away,\nTry again");
-    wrongeAnswerCounter++;
-  }else if( 1 > userInput || userInput > 13 ){
-    alert("You far away :( ,\nTry again");
-    wrongeAnswerCounter++;
-  } 
-
 }
